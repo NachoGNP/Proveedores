@@ -1,5 +1,5 @@
 runtime: python27
-service: fuentesexternasproveedores
+service: default
 threadsafe: true
 
 handlers:
