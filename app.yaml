@@ -1,0 +1,14 @@
+runtime: python27
+service: fuentesexternasproveedores
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /css/
+  static_dir: css
+
+- url: /images/
+  static_dir: images
