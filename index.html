@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=IE9" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+
 	<title>
 		Login
 	</title>
@@ -17,15 +18,21 @@
  	 </div>
 	 <p class="texto1">Login</p>
 </header>
-<form class="texto" method="post">
+<form class="texto">
 	<h2>Login</h2>
-	Correo:<input type="text" name="usuario" placeholder="&#128589; Correo">
-	<p>Contraseña:</p><input type="password" name="password" placeholder="&#128272; Contraseña">
-	<br><input type="submit" name="Enviar" href="/carga.html">
+	<p>Correo:<input type="text" name="usuario" placeholder="&#128589; Correo"></p>
+	<p>Contraseña:</p><input type="password" name="password" placeholder="&#128272; Contraseña"></p>
+	<br><input type="submit" class="submit" value="Enviar" onclick="enviar()">
 </form>
 <footer class="pie">
 	<img class="slogan" src="images/slogan.png">
 	<p> Consulta nuestro aviso de privacidad en <a href="https://www.gnp.com.mx" target="_blank"><font color=white>www.gnp.com.mx</font></a></p>
 </footer>
+<script type="text/javascript">
+
+	function enviar(){
+		window.location.href="/carga.html";
+	}
+</script>
 </body>
 </html>
